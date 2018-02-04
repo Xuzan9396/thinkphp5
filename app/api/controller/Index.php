@@ -1,5 +1,5 @@
 <?php
-namespace app\admin\controller;
+namespace app\api\controller;
 
 use app\comment\controller\Index as commentIndex;
 class Index
@@ -11,15 +11,17 @@ class Index
 
     public function index()
     {
-       $comment =  new commentIndex();
-       echo $comment->index();
-       echo 'admin';
-       dump(config());
+      dump('api') ;
     }
 
     public function user()
     {
         dump('user');
+    }
+
+    public function demo()
+    {
+        dump('demo');
     }
 
 
